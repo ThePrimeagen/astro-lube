@@ -1,0 +1,19 @@
+---
+import json from "../../twitchnames.json";
+import { Game } from "../components/Game";
+---
+
+<h1>
+Who has the best name?
+</h1>
+
+<div>
+    {JSON.stringify(json)}
+</div>
+
+<div>
+    <Game client:load names={json.names} />
+</div>
+
+<style>
+</style>
